@@ -1,8 +1,4 @@
-x = 121 #true
-y = str(x)
-for i in range(0, len(y)):
-    for j in range(len(y), 0):
-        if i == j:
-            print(True)
-        else: 
-            print(False)
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        return str(x) == str(x)[::-1]
+        
