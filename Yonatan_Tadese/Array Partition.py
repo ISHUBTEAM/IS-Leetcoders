@@ -1,11 +1,15 @@
-def arraySum():
-    nums = [1,4,3,2] #4
-    # nums = [6,2,6,5,1,2] #9
+class Solution:
+    def arrayPairSum(self, nums: List[int]) -> int:
+        nums.sort()
 
-    for i in nums:
-        for j in range(len(nums)):
-            print(min(i, j) + min(i, j))
+        sum = 0
+        arr = []
 
- 
+        for i in range(0, len(nums), 2):
+            arr.append(i)
+        
+        for j in arr:
+            sum += nums[j]
 
-print(arraySum())
+        return sum
+        
