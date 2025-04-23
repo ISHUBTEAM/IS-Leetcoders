@@ -12,4 +12,4 @@ class Solution:
             sum += nums[j]
 
         return sum
-        
+         
