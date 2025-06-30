@@ -1,0 +1,2 @@
+# Hecok Gizaw
+Leetcode solutions
